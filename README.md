@@ -18,7 +18,7 @@ proot-distro login ubuntu
 ```
 
 ```
-apt-get update -y && apt-get install git -y && git clone https://github.com/danunaise/ccminer-termux.git && cd AUTORUN-CCMINER-X1.2 && chmod +x setup.sh && sh setup.sh
+apt-get update -y && apt-get install git -y && git clone https://github.com/danunaise/ccminer-termux.git && cd ccminer-termux && chmod +x setup.sh && sh setup.sh
 ```
 
 หลังเปิด bash.bashrc
