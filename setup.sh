@@ -16,7 +16,7 @@ mv mining ../../etc
 
 chmod +x startminer
 
-cd && cd ../etc/ccminer-verus
+cd && cd ../etc/mining/ccminer
 chmod +x build.sh
 chmod +x configure.sh
 chmod +x autogen.sh
