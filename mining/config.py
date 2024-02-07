@@ -8,8 +8,7 @@ def main():
         print("กรุณาเลือกเมนูที่ต้องการ")
         print("1. ตั้งค่า API")
         print("2. ตั้งค่า Worker")
-        print("3. ออกและเริ่มขุด")
-        print("4. ออกจากการตั้งค่า")
+        print("3. ออกจากตั้งค่า")
         print("\033[34m*******************************************\033[0m")
         
         try:
@@ -23,10 +22,6 @@ def main():
                 os.system('cls || clear')
                 print("\033[92mกำลังเริ่มขุด...\033[0m")
                 os.system('startminer')
-                break
-            elif menu == 4:
-                os.system('cls || clear')
-                print("\033[31mออกจากโปรแกรม\033[0m")
                 break
             else:
                 os.system('cls || clear')
