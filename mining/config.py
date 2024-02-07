@@ -3,6 +3,7 @@ import json
 #config worker
 
 def main():
+    os.system('cls || clear')
     while True:
         print("\033[34m*******************************************\033[0m")
         print("กรุณาเลือกเมนูที่ต้องการ")
@@ -20,7 +21,6 @@ def main():
                 editWorker()
             elif menu == 3:
                 os.system('cls || clear')
-                print("\033[92mกำลังเริ่มขุด...\033[0m")
                 os.system('startminer')
                 break
             else:

@@ -35,7 +35,7 @@ password = merge_data.get('password')
 cpu_threads = merge_data.get('cpu_threads')
 
 os.system('cls || clear')
-print("Starting ccminer-verus...")
+print("\033[92mกำลังเริ่มขุด...\033[0m")
 time.sleep(2)
 os.system('cls || clear')
 print("\033[34m====+ ข้อมูล Miner +====")
