@@ -884,12 +884,12 @@ int share_result(int result, int pooln, double sharediff, const char *reason)
 		sprintf(solved, " solved: %u", p->solved_count);
 	}
 
-	applog(LOG_NOTICE, "\033[1;37;44mMining  \033[0m accepted: %lu/%lu (%s), %s %s%s",
+	applog(LOG_NOTICE, "\033[1;37;44m INFO \033[0m accepted: %lu/%lu (%s), %s %s%s",
 			p->accepted_count,
 			p->accepted_count + p->rejected_count,
 			suppl, s, flag, solved);
 	if (reason) {
-		applog(LOG_WARNING, "\033[1;37;44mMining  \033[0m reject reason: %s", reason);
+		applog(LOG_WARNING, "\033[1;37;44m INFO \033[0m reject reason: %s", reason);
 		if (!check_dups && strncasecmp(reason, "duplicate", 9) == 0) {
 			applog(LOG_WARNING, "enabling duplicates check feature");
 			check_dups = true;
@@ -3683,12 +3683,14 @@ int main(int argc, char *argv[])
 	// get opt_quiet early
 	parse_single_opt('q', argc, argv);
 
+	printf("\n");
 	printf("*******************************************\n");	
-	printf("ccminer CPU : v3.8.3 \n");
-	printf("based on CCminer Verushash v2.2 \n");
-	printf("\033[35m- original : monkins1010 \n");
-	printf("\033[32m- Remake : Zusture \033[37m \n");
+	printf("CCminer CPU v3.8.3 \n");
+	printf("Verushash v2.2 \n");
+	printf("\033[35m- Original : github.com/monkins1010\033[0m \n");
+	printf("\033[32m- Remake : github.com/danunaise\033[0m \n");
 	printf("*******************************************\n");
+	printf("\n");
 
 	rpc_user = strdup("");
 	rpc_pass = strdup("");

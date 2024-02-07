@@ -34,7 +34,8 @@ wallet = merge_data.get('wallet')
 password = merge_data.get('password')
 cpu_threads = merge_data.get('cpu_threads')
 
-print("Starting ccminer-verus...")
+os.system('cls || clear')
+print("Starting ccminer-veruss...")
 print("Data ")
 print(f"Worker: {worker}")
 print(f"Pool: {pool}")
@@ -44,4 +45,4 @@ print(f"CPU Threads: {cpu_threads}")
 
 time.sleep(5)
 
-os.system(f"cd mining && ./ccminer -a verus -o stratum+tcp://{pool} -u {wallet}.{worker} -p {password} -t {cpu_threads}")
+os.system(f"cd ccminer && ./ccminer -a verus -o stratum+tcp://{pool} -u {wallet}.{worker} -p {password} -t {cpu_threads}")
