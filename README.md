@@ -1,5 +1,9 @@
 # ccminer verus autostart termux linux(ubuntu)
 
+#### *Command คำสั่งภายใน*<br>
+startminer : เริ่มการขุด <br>
+editminer  : แก้ไขข้อมูล<br>
+
 ```
 termux-setup-storage
 ```
