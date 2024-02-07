@@ -1,0 +1,1 @@
+# ccminer verus autostart termux linux(ubuntu)
