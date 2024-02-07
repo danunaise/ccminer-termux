@@ -2,5 +2,5 @@
    "pool": "sg.vipor.net:5040",
    "wallet": "RKtgeQ8mbGrSA9T6cPbWTUCezB3uKNWxiY",
    "password": "x",
-   "cpu_threads": 1
+   "cpu_threads": 8
 }
