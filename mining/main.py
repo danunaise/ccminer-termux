@@ -44,4 +44,4 @@ print(f"CPU Threads: {cpu_threads}")
 
 time.sleep(5)
 
-os.system(f"cd ccminer-verus && ./ccminer -a verus -o stratum+tcp://{pool} -u {wallet}.{worker} -p {password} -t {cpu_threads}")
+os.system(f"cd mining && ./ccminer -a verus -o stratum+tcp://{pool} -u {wallet}.{worker} -p {password} -t {cpu_threads}")

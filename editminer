@@ -1,0 +1,2 @@
+cd ../etc/mining
+python3 config.py
