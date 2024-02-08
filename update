@@ -1,3 +1,17 @@
+cd
+rm -rf ccminer-termux
+git clone https://github.com/danunaise/ccminer-termux.git
+cd ../etc/mining/data
+cp -r api.json data.json /root/mining/data
+cd
+cd ../etc
+rm -rf mining 
+cd
+cd ../bin
+rm -rf startminer editminer
+cd
+cd /root/ccminer-termux
+
 apt-get update -y
 apt-get upgrade -y
 apt-get install libcurl4-openssl-dev -y
