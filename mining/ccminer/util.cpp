@@ -169,7 +169,7 @@ void gpulog(int prio, int thr_id, const char *fmt, ...)
 		return;
 
 	if (gpu_threads > 1)
-		len = snprintf(pfmt, 128, "\033[1;37;43m PROCESS \033[0m CPU T\033[38;5;104m%d\033[0m: Verus Hashing. %s", thr_id, fmt);
+		len = snprintf(pfmt, 128, "\033[1;37;43m PROCESS \033[0m CPU \033[38;5;104mT%d\033[0m: Verus Hashing. %s", thr_id, fmt);
 	else
 		len = snprintf(pfmt, 128, "GPU #%d: %s", dev_id, fmt);
 	pfmt[sizeof(pfmt)-1]='\0';

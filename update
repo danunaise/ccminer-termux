@@ -10,7 +10,7 @@ cd
 cd ../bin
 rm -rf startminer editminer
 cd
-cd /root/ccminer-termux
+cd ../root/ccminer-termux
 
 apt-get update -y
 apt-get upgrade -y
@@ -40,8 +40,5 @@ chmod +x autogen.sh
 ./build.sh
 
 chmod +x ccminer
-
-cd && cd ../etc
-nano bash.bashrc
 
 startminer
