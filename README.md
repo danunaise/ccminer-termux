@@ -3,6 +3,7 @@
 #### *Command คำสั่งภายใน*<br>
 startminer : เริ่มการขุด <br>
 editminer  : แก้ไขข้อมูล<br>
+update : อัปเดตโปรแกรมขุด<br>
 
 ```
 termux-setup-storage

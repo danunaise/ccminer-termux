@@ -16,6 +16,8 @@ def get_data():
         except requests.exceptions.RequestException as e:
             print(f"Error fetching data from GitHub: {e}")
             exit(1)
+            os.system('cls || clear')
+            os.system('startminer')
 
 with open('./data/data.json', 'w') as f:
     json.dump(get_data(), f, indent=3)
