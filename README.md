@@ -32,3 +32,9 @@ ctrl+x ตอบ yes เพื่อ save และ กด enter เพื่อ
 
 หลังทำเสร็จให้ กดค้างที่หน้าจอ เลือกที่ more... และ kill process
 ที่สำคัญอย่าลืม กดเปิด Keep screen on ไว้เพื่อให้โปรแกรมขุดทำงานตลอดโดยที่ไม่พักหน้าจอ
+
+## หน้าจอการทำงาน
+<img src="https://media.discordapp.net/attachments/888819175513010256/1223895803857207326/image.png?ex=661b84ca&is=66090fca&hm=fe7f2ecd5911f8620c1bee34b1a5f247f1a6286dbb49ca57a8c57c59cc4530f1&=&format=webp&quality=lossless&width=360&height=662"/>
+
+## หน้าการตั้งค่า
+<img src="https://media.discordapp.net/attachments/888819175513010256/1223895980403851314/image.png?ex=661b84f4&is=66090ff4&hm=9c15fc7b9d17b3726e8e7fda2f116d01caacf070e91ac6f724888bd0c6d3c06e&=&format=webp&quality=lossless&width=356&height=661"/>
