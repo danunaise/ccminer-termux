@@ -4,20 +4,30 @@ import requests
 import time
 
 def get_data():
-    with open('./data/api.json', 'r') as f:
-        data = json.load(f)
-        url = data.get('url')
-        headers = {'Cache-Control': 'no-cache, no-store, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0'}
+    while True:
         try:
-            # Fetch data from GitHub
-            res = requests.get(url, headers=headers)
-            res.raise_for_status()
-            return res.json()
+            with open('./data/api.json', 'r') as f:
+                data = json.load(f)
+                url = data.get('url')
+                headers = {'Cache-Control': 'no-cache, no-store, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0'}
+                # Fetch data from GitHub
+                res = requests.get(url, headers=headers)
+                res.raise_for_status()
+                return res.json()
         except requests.exceptions.RequestException as e:
             print(f"Error fetching data from GitHub: {e}")
-            exit(1)
-            os.system('cls || clear')
-            os.system('startminer')
+            # ถ้ามีข้อผิดพลาดเกิดขึ้นให้กำหนดเวลาหยุดพักและทำลูปอีกครั้ง
+            continue
+        except Exception as ex:
+            print(f"An error occurred: {ex}")
+            # หากเกิดข้อผิดพลาดที่ไม่ใช่ requests.exceptions.RequestException ออกและหยุดการทำงาน
+            break
+
+        # หากไม่มีข้อผิดพลาดจากการเรียก API ให้ออกจากลูป
+        break
+
+    # หากพบข้อมูลสำเร็จ ให้คืนค่าเป็น JSON ของข้อมูล
+    return None
 
 with open('./data/data.json', 'w') as f:
     json.dump(get_data(), f, indent=3)
