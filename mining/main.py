@@ -17,6 +17,7 @@ def get_data():
         except requests.exceptions.RequestException as e:
             print(f"Error fetching data from GitHub: {e}")
             # ถ้ามีข้อผิดพลาดเกิดขึ้นให้กำหนดเวลาหยุดพักและทำลูปอีกครั้ง
+            time.sleep(5)
             continue
         except Exception as ex:
             print(f"An error occurred: {ex}")
